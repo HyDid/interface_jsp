@@ -99,7 +99,7 @@ public class join extends HttpServlet{
 		
 		// 输出
 		JSONObject obect;
-		if (str == null) {
+		if (str.length() == 0) {
 			//为空
 			obect = this.getBaseJsonObject(str,"没有更多", false);
 		}else {
