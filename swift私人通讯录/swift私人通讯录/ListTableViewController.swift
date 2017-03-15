@@ -75,9 +75,9 @@ class ListTableViewController: UITableViewController {
             }
         }else{
             
-            vc.completionCallBack = {
+            vc.completionCallBack = { [weak vc] in
                 
-                guard let p = vc.person else {
+                guard let p = vc?.person else {
     
                     return
                 }
